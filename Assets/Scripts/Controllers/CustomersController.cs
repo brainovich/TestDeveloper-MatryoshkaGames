@@ -116,6 +116,7 @@ namespace CookingPrototype.Controllers {
 			TotalCustomersGeneratedChanged?.Invoke();
 			 
 			GameplayController.Instance.OrdersTarget = totalOrders - 2;
+			GameplayController.Instance.StartGame();
 		}
 
 		/// <summary>
